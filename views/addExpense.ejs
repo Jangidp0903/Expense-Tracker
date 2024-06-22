@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- title %></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="logo">EXP.</a>
+      <a href="/addexpense" class="exp">Add Expense</a>
+    </nav>
+
+    <div class="form">
+      <h1>Add Expense</h1>
+      <form action="/" method="post">
+        <div class="form-group">
+          <label for="name">Expense Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Expense Name"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="amount">Expense Amount</label>
+          <input
+            type="text"
+            name="amount"
+            placeholder="Enter Expense Amount"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="category">Expense Category</label>
+          <select name="category" id="" required>
+            <option>Category</option>
+            <option>Food</option>
+            <option>Living</option>
+            <option>Transport</option>
+            <option>Utilities</option>
+            <option>Shopping</option>
+            <option>Entertainment</option>
+            <option>Others</option>
+          </select>
+        </div>
+        <button type="submit">Add +</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 3rem;
+}
+
+nav .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+nav .exp {
+  color: gray;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav .exp:hover {
+  color: lavenderblush;
+}
+
+/* Category */
+h1 {
+  margin: 2rem auto 0;
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  color: white;
+  border-radius: 0.5rem;
+  background: linear-gradient(45deg, dodgerblue, red);
+}
+
+/* Form */
+.form {
+  border: 1px solid black;
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto 0;
+  padding: 1rem;
+}
+
+.form h1 {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.form form {
+  margin-top: 1rem;
+}
+.form form .form-group {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  display: grid;
+}
+
+.form-group label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form-group input,
+select {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
+form button {
+  font-size: 1.5rem;
+  width: 15%;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+form button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Table */
+.table {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin: 2rem auto 0;
+  width: 80%;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.table table {
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+  width: 100%;
+}
+
+table thead th {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+  width: 25%;
+}
+
+table td {
+  padding: 1rem 0 0 5.5rem;
+  border-right: 1px solid black;
+}
+table td:last-child {
+  border: 0;
+}
+
+table td a {
+  padding: 0.4rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  background-color: red;
+  transition: 0.4s;
+}
+
+table td a:hover {
+  background-color: rgb(158, 6, 6);
+}

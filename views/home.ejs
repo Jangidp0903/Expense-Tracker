@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- title %></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="logo">EXP.</a>
+      <a href="/addexpense" class="exp">Add Expense</a>
+    </nav>
+
+    <h1>Expenses</h1>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Expense Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if(typeof data == typeof []){ %> <% data.forEach(item => { %>
+
+          <tr>
+            <td><%= item.name %></td>
+            <td>₹ <%= item.amount %></td>
+            <td><%= item.category %></td>
+            <td><a href="/delete/<%= item._id %>">Delete</a></td>
+          </tr>
+
+          <% }); %> <% } %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
